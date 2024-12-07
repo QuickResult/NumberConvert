@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'SoDoSans';
-    src: url('SoDoSans-Regular.ttf') format('truetype');
+    src: url('./SoDoSans-Regular.ttf') format('truetype');
 }
 
 body 
