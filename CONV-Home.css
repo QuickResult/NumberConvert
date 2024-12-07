@@ -4,174 +4,344 @@
     src: url('./SoDoSans-Regular.ttf') format('truetype');
 }
 
-body {
-    background-image: url(CONVimg.jpg);
-    min-height: 100vh; /* Adjust for dynamic heights */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+body 
+{
+            background-image: url(CONVimg.jpg);
+            min-height: 1000px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
 }
 
-header {
-    position: relative;
-    padding: 20px;
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
-    min-height: 500px;
+header 
+{
+            position: relative;
+            padding: 20px;
+            background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1;
+            min-height: 735px;
 }
 
-header h1, header h2 {
-    margin: 0;
-    position: absolute;
-    left: 5%;
-    font-size: 8vw; /* Responsive scaling */
-    font-family: 'SoDoSans';
-    font-weight: 1200;
-    letter-spacing: 2px;
-    color: black;
+header h1
+{
+            margin: 0; 
+            position: absolute; 
+            top: 280px; 
+            left: 80px; 
+            font-size: 150px;
+            font-family: 'SoDoSans';
+            font-weight: 1200;
+            letter-spacing: 2px;
+            color: black;
 }
 
-header h1 {
-    top: 20%;
+header h2
+{
+            margin: 0; 
+            position: absolute; 
+            top: 400px; 
+            left: 80px; 
+            font-size: 150px;
+            font-family: 'SoDoSans';
+            font-weight: 1200;
+            letter-spacing: 2px;
+            color: black;
 }
 
-header h2 {
-    top: 40%;
+nav 
+{
+            background-color: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 21px 50px; 
 }
 
-nav {
-    background-color: white;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
+nav span 
+{
+            display: inline-block;
+            cursor: pointer;
+            font-family: 'SoDoSans';
+            font-weight: 700;
+            letter-spacing: 2px;
 }
 
-nav img {
-    width: 80px; /* Scale down for smaller screens */
-    margin-left: 10px;
+nav img 
+{
+            width: 100px;
+            margin-left: 70px;
 }
 
-nav .links {
-    display: flex;
-    gap: 20px; /* Reduced spacing */
-    flex-grow: 1;
-    justify-content: flex-end;
-    margin-right: 20px;
+nav .links 
+{
+            display: flex;
+            gap: 100px; 
+            flex-grow: 1;
+            justify-content: flex-end;
+            margin-right: 178px;
 }
 
-nav a {
-    font-size: 14px; /* Smaller font size */
+nav a 
+{
+            text-decoration: none;
+            color: black;
+            font-family: 'SoDoSans';
+            font-weight: 700;
+            letter-spacing: 2px;
+            display: inline-block;
 }
 
-.mainbody, .mainbody2 {
-    padding: 20px; /* Reduced padding for smaller screens */
-    display: flex;
-    flex-wrap: wrap; /* Stack elements on smaller screens */
-    justify-content: center;
-    gap: 20px;
-    font-family: 'SoDoSans';
-    letter-spacing: 2px;
-    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.2);
+nav a span 
+{
+            padding: 0; 
+            transition: color 0.3s ease; 
 }
 
-.leftside, .rightside, .leftside2, .rightside2 {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 600px; /* Limit size on larger screens */
-    height: auto; /* Allow flexible height */
-    margin: 0 auto;
-    padding: 10px;
-    text-align: justify;
+nav a:hover span 
+{
+            color: grey; 
 }
 
-.rightside img, .rightside2 img {
-    display: block;
-    margin: 20px auto;
-    max-width: 90%; /* Scale down images for smaller screens */
-    height: auto;
+
+.mainbody
+{
+            background-color: white;
+            position: relative;
+            justify-content: center; 
+            align-items: center;
+            gap: 20px;
+            display: flex;
+            padding-left: 140px;
+            padding-right: 140px;
+            padding-top: 140px;
+            padding-bottom: 100px;
+            min-height: auto;
+            font-family: 'SoDoSans';
+            letter-spacing: 2px;
+            box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.footer {
-    background: linear-gradient(rgba(255, 255, 255, 0.953), rgba(255, 255, 255, 0.964)), url(CONVimg.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px 10px;
+.leftside, .rightside
+{
+            background-color: white;
+            width: 600px; 
+            height: 600px; 
+            margin: 0;
+            padding: 0px; 
+            text-align: justify;
+            
 }
 
-.footer-container {
-    flex-wrap: wrap; /* Stack elements on smaller screens */
-    gap: 20px;
-    padding: 10px;
+.rightside 
+{
+            top: 150px; 
 }
 
-.footer-links, .footer-social {
-    flex: 1;
-    text-align: center; /* Center content for better alignment */
+.rightside img 
+{
+            display: block; 
+            margin-left: 100px; 
+            margin-top: auto;
+            width: auto;
+            height: auto;
 }
 
-/* Media Queries for Phones and Tablets */
-@media (max-width: 1024px) {
-    header h1, header h2 {
-        font-size: 10vw; /* Smaller for tablets */
-    }
-
-    nav .links {
-        flex-wrap: wrap; /* Stack links */
-        gap: 10px;
-    }
-
-    .mainbody, .mainbody2 {
-        flex-direction: column; /* Stack sections */
-        padding: 10px;
-    }
-
-    .leftside, .rightside, .leftside2, .rightside2 {
-        width: 90%; /* Shrink content area */
-    }
+.mainbody2
+{
+            background-color: white;
+            position: relative;
+            justify-content: center; 
+            align-items: center;
+            gap: 30px;
+            display: flex;
+            padding-left: 140px;
+            padding-right: 140px;
+            padding-top: 1px;
+            padding-bottom: 140px;
+            min-height: auto;
+            font-family: 'SoDoSans';
+            letter-spacing: 2px;
+            line-height: 30px;
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.045);
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 10px;
-        min-height: 300px;
-    }
+.leftside2
+{
+            background-color: white;
+            width: 600px; 
+            height: 600px; 
+            margin: 0;
+            padding: 0px; 
+            text-align: justify;
+            
+}
 
-    header h1, header h2 {
-        font-size: 12vw; /* Larger for smaller screens */
-        left: 5%;
-        top: auto;
-    }
+.rightside2
+{
+            background-color: white;
+            width: 800px; 
+            height: 600px; 
+            margin: 0;
+            padding: 0px; 
+            text-align: justify;
+            
+}
 
-    nav img {
-        width: 60px;
-    }
+.rightside2 img
+{
+            top: 140px; 
+            width: 600px;
+            margin-top: 40px;
+}
 
-    nav a {
-        font-size: 12px;
-    }
+.footer 
+{
+            background: linear-gradient(rgba(255, 255, 255, 0.953), rgba(255, 255, 255, 0.964)), url(CONVimg.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 50px 0;
+            padding-bottom: 100px;
+            border-top: 1px solid #ddd;
+            font-family: 'SoDoSans';
+            letter-spacing: 2px;
+}
+  
+.footer-container 
+{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            gap: 50px;
+}
+  
+.footer-links, .footer-social 
+{
+            flex: 1;
+            margin-right: 20px;
+            width: 100%;
+}
 
-    .mainbody, .mainbody2 {
-        gap: 10px;
-    }
+.footer-social 
+{
+            display: flex;
+            flex-direction: column; 
+            align-items: flex-start; 
+            margin-top: 110px;
+            margin-right: 500px;
+}
+  
+.footer-links h4, .footer-social h4 
+{
+            font-size: 16px;
+            margin-bottom: 10px;
+}
+  
+.footer-links ul 
+{
+            list-style: none;
+            padding: 0;
+}
+  
+.footer-links li 
+{
+            margin-bottom: 8px;
+}
+  
+.footer-links a 
+{
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+}
+  
+.footer-links a:hover 
+{
+            text-decoration: underline;
+}
+  
+.footer-social .social-icons 
+{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+}
+  
+.footer-social .social-icons a img 
+{
+            width: 24px; /* Adjust size as needed */
+            height: 24px;
+            transition: transform 0.3s;
+}
+  
+.footer-social .social-icons a img:hover 
+{
+            transform: scale(1.2);
+}
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+.footer-links 
+{
+            display: flex;
+            flex-direction: column;
+}
+  
+.links-group 
+{
+            display: flex; 
+            gap: 70px; 
+            padding-top: 20px;
+}
+  
+.footer-links ul 
+{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+}
+  
+.footer-links ul li 
+{
+            margin-bottom: 8px;
+}
+  
+.footer-links ul a 
+{
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+            display: inline-block; 
+}
+  
+.footer-links ul a:hover 
+{
+            text-decoration: none;
+            transform: scale(1.2);
+}
+
+.footer-image 
+{
+            display: block;
+            margin: 0;
+            max-width: 100px; 
+            height: auto;
+            padding-bottom: 60px;
+            padding-top: 20px;
 }
 
   
