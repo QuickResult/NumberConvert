@@ -123,6 +123,7 @@ nav a:hover span
             margin: 0;
             padding: 20px;
             border-radius: 20px;
+            width: 50%;
 }
 
 .rightside
@@ -134,6 +135,7 @@ nav a:hover span
             background-color: white;
             margin: 0;
             padding: 20px;
+            width: 50%;
 }
 
 .rightside img
