@@ -1,7 +1,12 @@
-@font-face {
+@font-face 
+{
     font-family: 'SoDoSans';
-    src: url(SoDoSans-Regular.ttf);
-   }
+    src: url('SoDoSans-Regular.woff2') format('woff2'),
+         url('SoDoSans-Regular.woff') format('woff'),
+         url('SoDoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body 
 {
