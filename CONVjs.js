@@ -7,7 +7,6 @@ function updateValues(base) {
 
   let decimalValue;
 
-  // Convert input to decimal based on the base
   if (base === 'decimal') {
     decimalValue = parseInt(numberInput.value, 10);
   } else if (base === 'binary') {
@@ -17,8 +16,7 @@ function updateValues(base) {
   } else if (base === 'octal') {
     decimalValue = octalToDecimal(numberInput.value);
   }
-
-  // If conversion fails, clear all fields
+  
   if (isNaN(decimalValue)) {
     decimalResult.value = '';
     octalResult.value = '';
@@ -27,7 +25,6 @@ function updateValues(base) {
     return;
   }
 
-  // Update all fields
   decimalResult.value = decimalValue;
   binaryResult.value = decimalToBinary(decimalValue);
   octalResult.value = decimalToOctal(decimalValue);
@@ -89,6 +86,5 @@ function octalToDecimal(octal) {
   return result;
 }
 
-// Event listener for the input
 const numberInput = document.getElementById('numberInput');
 numberInput.addEventListener('input', () => updateValues('decimal'));
