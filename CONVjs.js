@@ -31,8 +31,6 @@ function updateValues(base) {
   hexadecimalResult.value = decimalToHex(decimalValue);
 }
 
-// Conversion functions (manual implementations)
-
 function decimalToBinary(decimal) {
   let result = '';
   while (decimal > 0) {
